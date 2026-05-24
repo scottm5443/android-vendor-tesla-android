@@ -310,6 +310,11 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/services/lighttpd/www-default/version.json:$(TARGET_COPY_OUT_VENDOR)/tesla-android/lighttpd/www-default/version.json \
      $(LOCAL_PATH)/services/lighttpd/www-redirect/index.html:$(TARGET_COPY_OUT_VENDOR)/tesla-android/lighttpd/www-redirect/index.html \
 
+################################################################################
+# Custom root CA
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/services/lighttpd/ca/ca.crt:$(TARGET_COPY_OUT_SYSTEM)/etc/security/cacerts/tesla-android-ca.pem \
+
 
 ################################################################################
 
